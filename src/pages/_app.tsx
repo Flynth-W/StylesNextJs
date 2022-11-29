@@ -14,7 +14,7 @@ function App({Component ,pageProps}){
       content="simple pagina de next js"
     />
   </Head>
-  <ThemeProvider>
+  <ThemeProvider themes={['blue', 'light', 'dark']}>
     <Layout>
       <Component {...pageProps} />
     </Layout>
