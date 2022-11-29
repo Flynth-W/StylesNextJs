@@ -1,0 +1,15 @@
+[data-theme='light'] body {
+  color: #000000;
+  background: #ffffff;
+}
+
+[data-theme='dark'] body {
+  color: #555555;
+  background: #222222;
+}
+
+[data-theme='blue'] body {
+  color: #006688;
+  background: #003355;
+}
+

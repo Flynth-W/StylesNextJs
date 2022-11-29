@@ -1,7 +1,8 @@
 import '../styles/globals.css'
-
 import Head from 'next/head'
+import { ThemeProvider } from 'next-themes'
 import Layout from "../components/Layout"
+
 function App({Component ,pageProps}){
   return (
   <>
@@ -13,9 +14,11 @@ function App({Component ,pageProps}){
       content="simple pagina de next js"
     />
   </Head>
-  <Layout>
-    <Component {...pageProps} />
-  </Layout>
+  <ThemeProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </ThemeProvider>
   </>
   )
 }
